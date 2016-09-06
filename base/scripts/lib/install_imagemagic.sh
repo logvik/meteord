@@ -1,3 +1,3 @@
 set -e
-apt-get update
-apt-get install imagemagick libmagickcore-dev libmagickwand-dev
+apt-get update -y
+apt-get install -y imagemagick libmagickcore-dev libmagickwand-dev
