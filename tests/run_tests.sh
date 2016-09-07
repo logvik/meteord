@@ -9,8 +9,8 @@ bash ./test_meteor_app_with_devbuild.sh
 echo "Done test_meteor_app_with_devbuild.sh"
 bash ./test_bundle_local_mount.sh
 echo "Done test_bundle_local_mount.sh"
-bash ./test_bundle_web.sh
-echo "Done test_bundle_web.sh"
+#bash ./test_bundle_web.sh
+#echo "Done test_bundle_web.sh"
 bash ./test_binary_build_on_base.sh
 echo "Done test_binary_build_on_base.sh"
 bash ./test_binary_build_on_bin_build.sh
