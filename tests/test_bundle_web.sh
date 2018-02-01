@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 function clean() {
   docker rm -f web
@@ -12,7 +12,7 @@ docker run -d \
     -e ROOT_URL=http://web_app \
     -e BUNDLE_URL=https://s3.amazonaws.com/zeema-data/aa.tar.gz \
     -p 9090:80 \
-    meteorhacks/meteord:base
+    logvik/meteord:base
 
 sleep 8
 

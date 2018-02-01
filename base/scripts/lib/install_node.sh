@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 set -e
-NODE_VERSION=4.4.7
+NODE_VERSION=8.9.3
 NODE_ARCH=x64
 
 # check we need to do this or not
@@ -15,3 +15,4 @@ mv ${NODE_DIST} /opt/nodejs
 
 ln -sf /opt/nodejs/bin/node /usr/bin/node
 ln -sf /opt/nodejs/bin/npm /usr/bin/npm
+

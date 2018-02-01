@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/sh
+
+curl -sL https://install.meteor.com | sed s/--progress-bar/-sL/g | /bin/sh
 
 function clean() {
   docker rm -f meteor-app
@@ -8,10 +10,9 @@ function clean() {
 
 cd /tmp
 clean
-
 meteor create hello
 cd hello
-echo FROM meteorhacks/meteord:onbuild >> Dockerfile
+echo FROM logvik/meteord:onbuild >> Dockerfile
 
 docker build -t meteor-app-image ./
 docker run -d \

@@ -1,3 +1,4 @@
+#!/bin/sh
 set -e
 
 if [ -d /bundle ]; then
@@ -23,7 +24,7 @@ fi
 if [[ $REBUILD_NPM_MODULES ]]; then
   if [ -f /opt/meteord/rebuild_npm_modules.sh ]; then
     cd programs/server
-    bash /opt/meteord/rebuild_npm_modules.sh
+    /opt/meteord/rebuild_npm_modules.sh
     cd ../../
   else
     echo "=> Use meteorhacks/meteord:bin-build for binary bulding."

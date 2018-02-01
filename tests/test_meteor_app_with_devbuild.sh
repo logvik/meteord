@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 function clean() {
   docker rm -f meteor-app
@@ -11,7 +11,7 @@ clean
 
 meteor create hello
 cd hello
-echo FROM meteorhacks/meteord:devbuild >> Dockerfile
+echo FROM logvik/meteord:devbuild >> Dockerfile
 
 docker build -t meteor-app-image ./
 docker run -d \

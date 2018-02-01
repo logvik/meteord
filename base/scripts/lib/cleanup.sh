@@ -1,5 +1,6 @@
-## Borrowed from: https://github.com/chriswessels/meteor-tupperware
+#!/bin/sh
 
+## Borrowed from: https://github.com/chriswessels/meteor-tupperware
 set -e
 # Autoremove any junk
 apt-get autoremove -y
@@ -14,4 +15,4 @@ rm -rf /var/lib/cache /var/lib/log
 rm -rf /tmp/*
 
 # Clear npm cache
-npm cache clear
+npm cache clean --force 

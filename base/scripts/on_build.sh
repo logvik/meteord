@@ -1,5 +1,5 @@
-#!/bin/bash
+#!/bin/sh
 set -e
 
-bash $METEORD_DIR/lib/install_meteor.sh
-bash $METEORD_DIR/lib/build_app.sh
+$METEORD_DIR/lib/install_meteor.sh
+$METEORD_DIR/lib/build_app.sh

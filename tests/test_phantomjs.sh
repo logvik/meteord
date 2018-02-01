@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 function clean() {
   docker rm -f phantomjs_check
@@ -7,8 +7,8 @@ function clean() {
 clean
 docker run  \
     --name phantomjs_check \
-    --entrypoint="/bin/bash" \
-    meteorhacks/meteord:base -c 'phantomjs -h'
+    --entrypoint="/bin/sh" \
+    logvik/meteord:base -c 'phantomjs -h'
 
 sleep 5
 
